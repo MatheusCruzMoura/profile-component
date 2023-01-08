@@ -1,0 +1,53 @@
+@import url("reset.css");
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #21222c;
+}
+
+.avatar {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 270px;
+    border-radius: 0 0 100vw 100vw;
+    overflow: hidden;
+    transition: transform 500ms;
+}
+
+.avatar:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.avatar .background {
+    display: flex;
+    width: 270px;
+    border-radius: 50%;
+    filter: brightness(80%);
+    position: absolute;
+    aspect-ratio: 1 / 1;
+    transition: filter 250ms;
+}
+
+.avatar:hover .background {
+    filter: brightness(120%);
+}
+
+.avatar .person {
+    display: flex;
+    width: 280px;
+    position: relative;
+    filter: brightness(90%);
+    transition: filter 250ms, transform 1000ms;
+}
+
+.avatar:hover .person {
+    filter: brightness(100%);
+    transform: scale(1.15) translateY(-22px);
+}
