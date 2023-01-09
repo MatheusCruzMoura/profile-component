@@ -29,14 +29,14 @@
     display: flex;
     width: 270px;
     border-radius: 50%;
-    filter: brightness(80%);
+    filter: brightness(80%) grayscale(100%);
     position: absolute;
     aspect-ratio: 1 / 1;
-    transition: filter 250ms;
+    transition: filter 350ms;
 }
 
 .avatar:hover .background {
-    filter: brightness(120%);
+    filter: brightness(120%) grayscale(0%);
 }
 
 .avatar .person {
@@ -44,7 +44,7 @@
     width: 280px;
     position: relative;
     filter: brightness(90%);
-    transition: filter 250ms, transform 1000ms;
+    transition: filter 350ms, transform 1000ms;
 }
 
 .avatar:hover .person {
